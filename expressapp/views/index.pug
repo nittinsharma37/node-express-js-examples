@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title #{title}
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    body
+        div.text-center
+            h1.h1.py-4 Simple Form Example With Express
+        div.container.text-center.w-25
+            form(method="POST", action='/form_submit')
+                div.form-group.py-3
+                    input(type="text", name="username", class="form-control", value="", placeholder="Username") 
+                div.form-group.py-3
+                    input(type="text", name="email", class="form-control", value="", placeholder="Email") 
+                div.form-group.py-3
+                    input(type="submit", class="btn btn-primary", value="Submit") 
